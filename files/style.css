@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+* {
+  font-family: "Comic Neue", cursive;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.body {
+  display: grid;
+  grid-template: auto 1fr/2fr 6fr 2fr;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  background-color: #fb923c;
+  grid-area: 1/1/3/2;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.2fr 1fr;
+}
+
+.header {
+  background-color: #ffedd5;
+  grid-area: 1/2/2/4;
+}
+
+.content {
+  background-color: #fed7aa;
+  grid-area: 2/2/3/3;
+}
+
+.rigth {
+  background-color: #fed7aa;
+  grid-area: 2/3/3/4;
+}
+
+.logo {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff7ed;
+}
+.logo img {
+  filter: invert(100%);
+}
+
+li {
+  list-style: none;
+}
+
+.opcion1 {
+  margin: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.opcion1 li {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.opcion2 {
+  margin: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.opcion2 li {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff7ed;
+}
+
+.headertop {
+  display: flex;
+  justify-content: space-between;
+}
+.headertop img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 15px;
+  background-color: #fed7aa;
+  border: solid 0.5px #fed7aa;
+  width: 30vw;
+  height: 28px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.headerleft {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-left: 35px;
+}
+
+.headerrigth {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-right: 8vw;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.headerrigth img {
+  height: 30px;
+  width: 30px;
+}
+.headerrigth #xd {
+  height: 50px;
+  width: 50px;
+}
+
+.headerbot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerbot img {
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.headerbot .text {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.headerbot .text2 {
+  font-size: 1.5rem;
+}
+.headerbot button {
+  margin: 15px;
+  color: #fff7ed;
+  background-color: #fb923c;
+  font-size: max(1vw, 0.8rem);
+  font-weight: bold;
+  padding: 8px 15px 8px 15px;
+  width: 5vw;
+  border-radius: 30px;
+  border: 1px solid #fb923c;
+  cursor: pointer;
+  margin-right: 0;
+}
+.headerbot .uwu {
+  margin-right: 5vw;
+}
+
+.rigth {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 30px;
+}
+.rigth .box {
+  font-size: max(1vw, 0.9rem);
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 30vh;
+  justify-content: center;
+  background-color: #ffedd5;
+  padding: 0px 20px 0 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.rigth .box span {
+  padding: 20px 0 20px 0;
+}
+
+.text3 {
+  margin-right: 20px;
+}
+
+#owo {
+  border-top: 1px solid #fdba74;
+  border-bottom: 1px solid #fdba74;
+}
+
+.box1 {
+  font-weight: normal;
+  margin-top: 20px;
+  background-color: #ffedd5;
+  border-radius: 20px;
+  font-size: 1rem;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding-left: 30px;
+}
+.box1 img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.box1 div {
+  display: flex;
+}
+.box1 div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box1 span {
+  font-size: 1.2vw;
+  color: #ea580c;
+}
+.box1 .text5 {
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+}
+
+.content {
+  padding: 20px;
+}
+.content .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contentgrid {
+  display: grid;
+  grid-template: 1fr 1fr/repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  height: 93%;
+  padding-top: 15px;
+}
+
+.card {
+  background-color: #ffedd5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 18px;
+}
+.card div {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.card img {
+  filter: opacity(0.2) drop-shadow(0 0 0 #9a3412);
+}
+.card span {
+  font-size: 1.15rem;
+}
+
+/*# sourceMappingURL=style.css.map */
